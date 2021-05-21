@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(160, 160, 160);
+    color: white;
+}
+.flex{
+    display: flex;
+}
+.flex0{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(96, 96, 96);
+    width: 30%;
+}
+.flex00{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+a{
+    text-decoration: none;
+    color: rgb(100, 290, 680);
+}
+h1{
+    text-align: center;
+     font-size: 250%;
+}
+h3{
+    text-align: center;
+     font-size: 180%;
+}
+.pp{
+    font-size: 150%;
+}
+body{
+    counter-reset: contents;
+}
+.content::before{
+    counter-increment: contents;
+    content: counter(contents) ". ";
+}
+.link:hover{
+    background-color: rgb(390, 45, 138);
+}
+.link:hover p{
+    color: brown;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+.me{
+    width: 100%;
+     height: auto;
+}
+.bt{
+    background-color: white;
+    color: teal;
+    font-size: 20px;
+    border: teal solid 1px;
+    border-radius: 10px;
+    width: 210px;
+    padding: 5px 10px;
+    margin: none;
+}
+.d1:hover .bt{background-color: rgb(178, 188, 97);}
+.d1{
+    position: relative;
+    display: block;
+}
+.d2{
+    color: white;
+    position: absolute;
+    display: none;
+    background-color: rgb(75, 35, 112);
+    width: 200px;
+
+}
+.d1:hover .d2{display: block;
+}
+@media screen and (max-width: 500px) {
+    
+    body{
+        font-size: 16px;
+    }
+    h1{
+     font-size: 180%;
+    }
+    h2{
+    font-size: 140%;
+    }
+    h3{
+        font-size: 120%;
+    }
+    .flex0{
+        width: 30%;
+    }
+    .flex00{
+        width: 70%;
+    }
+    .pp{
+        font-size: 110%;
+    }
+    p{
+        font-size: 90%;
+    }
+    .me{
+        width: 100%; height: auto;
+    }
+    .d2{
+        width: 100px;
+    }
+    .bt{
+        width: 110px;
+        font-size: 70%;
+    }
+    img{
+    width: 30px;
+    height: 30px;
+}
+}
